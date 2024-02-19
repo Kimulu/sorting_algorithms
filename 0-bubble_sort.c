@@ -34,20 +34,16 @@ return;
 
 for (i = 0; i < size - 1; i++)
 {
-swapped = 0; /* Flag to check if any swap
-occurs in this pass */
+swapped = 0;
 for (j = 0; j < size - i - 1; j++)
 {
 if (array[j] > array[j + 1])
 {
-/* Swap the elements */
 swap_elements(&array[j], &array[j + 1]);
-swapped = 1; /* Set swapped flag to true */
-print_array(array, size); /* Print array after each swap */
+swapped = 1;
+print_array(array, size);
 }
 }
-/* If no two elements were swapped in the inner loop,
-then the array is sorted */
 if (swapped == 0)
 break;
 }
