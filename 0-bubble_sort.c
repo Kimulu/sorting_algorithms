@@ -21,6 +21,8 @@ tmp = *a;
  *   the Bubble sort algorithm.
  * @array: The array to be sorted.
  * @size: The size of the array.
+ *
+ * Description: Prints the array after each swap.
  */
 void bubble_sort(int *array, size_t size)
 {
